@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "loadmyresources",
+  "version": "${version}",
+  "name": "Load My Resources (UNOFFICIAL)",
+  "description": "Unofficial Fabric port of Load My Resources for Minecraft 1.21.1. Original project by Keksuccino.",
+  "environment": "client",
+  "authors": [
+    "Keksuccino",
+    "JustHari01 (port maintainer)"
+  ],
+  "contributors": [],
+  "contact": {
+    "homepage": "https://github.com/JustHari01/Load-My-Resources-1.21.1-Fabric-Port",
+    "sources": "https://github.com/JustHari01/Load-My-Resources-1.21.1-Fabric-Port/issues"
+  },
+  "license": "GPL-3.0-only",
+  "icon": "assets/loadmyresources/icon.png",
+  "entrypoints": {
+    "main": [
+      "de.keksuccino.loadmyresources.LoadMyResources"
+    ],
+    "client": [],
+    "server": []
+  },
+  "mixins": [
+    "loadmyresources.mixin.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.5",
+	"minecraft": "1.21.1",
+	"java": ">=21",
+    "fabric": "*"
+  }
+}
